@@ -1,0 +1,153 @@
+﻿@model VMitem
+@{
+    ViewData["Title"] = "NEWwareHouseItem";
+    Layout = "~/Views/Shared/Menu.cshtml";
+}
+
+<form method="post">
+
+	<div class="main-wrapper">
+		<div class="page-wrapper">
+			<div class="content container-fluid">
+
+				<!-- Page Header -->
+				<div class="page-header">
+					<div class="row align-items-center">
+						<div class="col">
+							<h3 class="page-title">Add WareHouse</h3>
+							<ul class="breadcrumb">
+								<div class=" text-end float-end ms-auto ">
+									@if ((bool)ViewData["InValid"] == true)
+									{
+										<div class="alert alert-success a-dismissible fade show" role="alert">
+											<strong>Saved successfully</strong>
+											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+										</div>
+									}
+									@if ((bool)ViewData["InUpdata"] == true)
+									{
+										<div class="alert alert-success a-dismissible fade show" role="alert">
+											<strong>Updated successfully</strong>
+											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+										</div>
+									}
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /Page Header -->
+
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="card">
+							<div class="card-body">
+								<div class="row">
+									<div class="page-header">
+										<div class="row align-items-center">
+											<div class="col">
+												<h3 class="page-title">WareHouse</h3>
+											</div>
+
+										</div>
+									</div>
+									<div>
+										
+											<input type="hidden" class="form-control" asp-for="VMItemDTO.Id"  />
+											
+										
+									</div>
+
+									<div class="col-12 col-sm-4">
+										<div class="form-group local-forms">
+											<label> Name Item <span class="login-danger">*</span></label>
+											<input type="text" class="form-control" asp-for="VMItemDTO.Name" />
+											<span asp-validation-for="VMItemDTO.Name"></span>
+										</div>
+									</div>
+									<div class="col-12 col-sm-4">
+										<div class="form-group local-forms">
+											<label>KU Code <span class="login-danger">*</span></label>
+											<input type="text" class="form-control" asp-for="VMItemDTO.kUCode" />
+											<span asp-validation-for="VMItemDTO.kUCode"></span>
+										</div>
+									</div>
+									<div class="col-12 col-sm-4">
+										<div class="form-group local-forms">
+											<label>Quantity<span class="login-danger">*</span></label>
+											<input type="text" class="form-control" asp-for="VMItemDTO.QTY" />
+											<span asp-validation-for="VMItemDTO.QTY"></span>
+										</div>
+									</div>
+									<div class="col-12 col-sm-4">
+										<div class="form-group local-forms">
+											<label>Cost Price<span class="login-danger">*</span></label>
+											<input type="text" class="form-control" asp-for="VMItemDTO.CostPrice" />
+											<span asp-validation-for="VMItemDTO.CostPrice"></span>
+										</div>
+									</div>
+									<div class="col-12 col-sm-4">
+										<div class="form-group local-forms">
+											<label>MSRP Price<span class="login-danger">*</span></label>
+											<input type="text" class="form-control" asp-for="VMItemDTO.MSRPPrice" />
+											<span asp-validation-for="VMItemDTO.MSRPPrice"></span>
+										</div>
+									</div>
+									<div class="col-12 col-sm-4">
+										<div class="form-group local-forms">
+											<label>WareHouse<span class="login-danger">*</span></label>
+											<select class="form-control select" asp-for="VMItemDTO.Warehouse_id">
+												<option>Please Select Religion  </option>
+												@foreach (WareHouseDTO Country in Model.VMwareHouseDTO)
+												{
+													<option value="@Country.Id">@Country.Name</option>
+												}
+
+
+
+												
+											</select>
+											<span asp-validation-for="VMItemDTO.Warehouse_id"></span>
+										</div>
+									</div>
+
+									<div class="col-12">
+										<div class="student-submit">
+											@if ((bool)ViewData["IsEdit"] == true)
+											{
+												<button type="submit" class="btn btn-primary" asp-action="Update">Update</button>
+
+											}
+											else
+											{
+												<button type="submit" class="btn btn-primary" asp-action="Save">Save</button>
+
+											}
+
+
+											
+
+
+
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- /Page Wrapper -->
+	</div>
+
+</form>
+<!-- /Main Wrapper -->
+

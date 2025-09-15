@@ -1,0 +1,98 @@
+﻿@model List<RoleModel>
+@{
+    ViewData["Title"] = "Rolelist";
+    Layout = "~/Views/Shared/Menu.cshtml";
+}
+
+<form method="post">
+	<div class="page-wrapper" style="min-height: 376px;">
+		<div class="content container-fluid">
+
+			<!-- Page Header -->
+			<div class="page-header">
+				<div class="row align-items-center">
+					<div class="col">
+						<h3 class="page-title">List of Roles </h3>
+
+					</div>
+				</div>
+			</div>
+			<!-- /Page Header -->
+
+
+
+			<div class="row">
+				<div class="col-sm-12">
+
+					<div class="card card-table">
+						<div class="card-body">
+
+							<!-- Page Header -->
+							<div class="page-header">
+								<div class="row align-items-center">
+									<div class="col">
+										<h3 class="page-title">Roles</h3>
+									</div>
+									<div class="col-auto text-end float-end ms-auto download-grp">
+										<a class="btn btn-outline-primary me-2" asp-controller="Account" asp-action="AddRole"><i class="fas fa-plus"> </i> Add Role</a>
+									</div>
+									
+								</div>
+							</div>
+							<!-- /Page Header -->
+
+							<div class="table-responsive">
+										<div class="col-sm-12">
+											<table class="table border-0 star-student table-hover table-center mb-0 datatable table-striped dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+												<thead class="student-thread">
+													<tr role="row">
+														<th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending" style="width: 135.975px;">
+															<div class="form-check check-tables">
+																<input class="form-check-input" type="checkbox" value="something">
+															</div>
+														</th>
+														<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 228.788px;">Name</th>
+														<th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Action: activate to sort column descending" style="width: 232.25px;" aria-sort="ascending">Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													@foreach (RoleModel item in Model)
+													{
+														<tr role="row" class="even">
+															<td class="sorting_1">
+																<div class="form-check check-tables">
+																	<input class="form-check-input" type="checkbox" value="something">
+																</div>
+															</td>
+														
+															<td>@item.Name</td>
+															<td class="sorting">
+														<div class="sorting">
+															
+															<a class="btn btn-sm bg-success-light " asp-route-id="@item.Id" asp-action="Delete">
+																<i class="fa-solid fa-trash"></i>
+															</a>
+														</div>
+															</td>
+													
+														</tr>
+
+													}
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer>
+		<p>Copyright © 2025 Dreamguys.</p>
+	</footer>
+	<!-- /Footer -->
+</form>

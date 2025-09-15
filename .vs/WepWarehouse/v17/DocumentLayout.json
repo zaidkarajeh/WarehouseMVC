@@ -1,0 +1,212 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\inetpub\\wwwroot\\WepWarehouse\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|c:\\inetpub\\wwwroot\\wepwarehouse\\wepwarehouse\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|solutionrelative:wepwarehouse\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|c:\\inetpub\\wwwroot\\wepwarehouse\\wepwarehouse\\views\\shared\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|solutionrelative:wepwarehouse\\views\\shared\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|c:\\inetpub\\wwwroot\\wepwarehouse\\wepwarehouse\\services\\warehouseitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|solutionrelative:wepwarehouse\\services\\warehouseitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|c:\\inetpub\\wwwroot\\wepwarehouse\\wepwarehouse\\services\\accountservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|solutionrelative:wepwarehouse\\services\\accountservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|c:\\inetpub\\wwwroot\\wepwarehouse\\wepwarehouse\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|solutionrelative:wepwarehouse\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|c:\\inetpub\\wwwroot\\wepwarehouse\\wepwarehouse\\services\\iaccountservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|solutionrelative:wepwarehouse\\services\\iaccountservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|c:\\inetpub\\wwwroot\\wepwarehouse\\wepwarehouse\\views\\account\\rolelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|solutionrelative:wepwarehouse\\views\\account\\rolelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|c:\\inetpub\\wwwroot\\wepwarehouse\\wepwarehouse\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|solutionrelative:wepwarehouse\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|c:\\inetpub\\wwwroot\\wepwarehouse\\wepwarehouse\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|solutionrelative:wepwarehouse\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|c:\\inetpub\\wwwroot\\wepwarehouse\\wepwarehouse\\models\\vmdashbord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D27F0D64-C10E-4EB4-942A-76A114C5A62A}|WepWarehouse\\WepWarehouse.csproj|solutionrelative:wepwarehouse\\models\\vmdashbord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 377,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "WepWarehouse\\Views\\Account\\Profile.cshtml",
+              "ToolTip": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "WepWarehouse\\Views\\Account\\Profile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-15T11:27:50.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WareHouseITEMService.cs",
+              "DocumentMoniker": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Services\\WareHouseITEMService.cs",
+              "RelativeDocumentMoniker": "WepWarehouse\\Services\\WareHouseITEMService.cs",
+              "ToolTip": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Services\\WareHouseITEMService.cs",
+              "RelativeToolTip": "WepWarehouse\\Services\\WareHouseITEMService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAACHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T11:20:04.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WepWarehouse\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WepWarehouse\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAmwIsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T11:04:27.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAccountServices.cs",
+              "DocumentMoniker": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Services\\IAccountServices.cs",
+              "RelativeDocumentMoniker": "WepWarehouse\\Services\\IAccountServices.cs",
+              "ToolTip": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Services\\IAccountServices.cs",
+              "RelativeToolTip": "WepWarehouse\\Services\\IAccountServices.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwB8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T11:04:12.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountServices.cs",
+              "DocumentMoniker": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Services\\AccountServices.cs",
+              "RelativeDocumentMoniker": "WepWarehouse\\Services\\AccountServices.cs",
+              "ToolTip": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Services\\AccountServices.cs",
+              "RelativeToolTip": "WepWarehouse\\Services\\AccountServices.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAwwMEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T11:02:50.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Rolelist.cshtml",
+              "DocumentMoniker": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Views\\Account\\Rolelist.cshtml",
+              "RelativeDocumentMoniker": "WepWarehouse\\Views\\Account\\Rolelist.cshtml",
+              "ToolTip": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Views\\Account\\Rolelist.cshtml",
+              "RelativeToolTip": "WepWarehouse\\Views\\Account\\Rolelist.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-15T11:02:20.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "WepWarehouse\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "WepWarehouse\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAALYAAAAAAAAAAAAAAMYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-15T08:51:15.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VMDashbord.cs",
+              "DocumentMoniker": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Models\\VMDashbord.cs",
+              "RelativeDocumentMoniker": "WepWarehouse\\Models\\VMDashbord.cs",
+              "ToolTip": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Models\\VMDashbord.cs",
+              "RelativeToolTip": "WepWarehouse\\Models\\VMDashbord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T08:48:23.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "WepWarehouse\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "WepWarehouse\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwCMAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T08:42:28.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Menu.cshtml",
+              "DocumentMoniker": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Views\\Shared\\Menu.cshtml",
+              "RelativeDocumentMoniker": "WepWarehouse\\Views\\Shared\\Menu.cshtml",
+              "ToolTip": "C:\\inetpub\\wwwroot\\WepWarehouse\\WepWarehouse\\Views\\Shared\\Menu.cshtml",
+              "RelativeToolTip": "WepWarehouse\\Views\\Shared\\Menu.cshtml",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-15T08:40:35.885Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 377,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+﻿@model WepWarehouse.Models.SignUpDTO
+
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Shared/Menu.cshtml";
+}
+<form method="post">
+	<div class="page-wrapper" style="min-height: 376px;">
+		<div class="content container-fluid">
+
+
+			<div class="row">
+				<div class="col-md-12">
+					
+					<div class="tab-content profile-tab-cont">
+
+						<!-- Personal Details Tab -->
+						<div class="tab-pane fade show active" id="per_details_tab">
+
+							<!-- Personal Details -->
+							<div class="row">
+								<div class="col-lg-9">
+									<div class="card">
+										<div class="card-body">
+											<h5 class="card-title d-flex justify-content-between">
+												<span>Personal Details</span>
+											</h5>
+											<div class="row">
+												<p class="col-sm-3 text-muted text-sm-end mb-0 mb-sm-3">Name</p>
+												<p class="col-sm-9"> @Model.Name</p>
+											</div>
+											<div class="row">
+												<p class="col-sm-3 text-muted text-sm-end mb-0 mb-sm-3">Role</p>
+												<p class="col-sm-9"> @Model.RoleName</p>
+											</div>
+											<div class="row">
+												<p class="col-sm-3 text-muted text-sm-end mb-0 mb-sm-3">Date of Birth</p>
+												<p class="col-sm-9">@Model.DOB.ToShortDateString()</p>
+											</div>
+											<div class="row">
+												<p class="col-sm-3 text-muted text-sm-end mb-0 mb-sm-3">Email ID</p>
+												<p class="col-sm-9"> @Model.Email</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="col-lg-3">
+
+									<!-- Account Status -->
+									<div class="card">
+										<div class="card-body">
+											<h5 class="card-title d-flex justify-content-between">
+												<span>Account Status</span>											</h5>
+											<button class="btn btn-success" type="button"><i class="fe fe-check-verified"></i> Active</button>
+										</div>
+									</div>
+									<!-- /Account Status -->
+									
+
+								</div>
+							</div>
+							<!-- /Personal Details -->
+
+						</div>
+						<!-- /Personal Details Tab -->
+						
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</form>

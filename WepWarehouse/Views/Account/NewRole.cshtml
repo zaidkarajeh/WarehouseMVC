@@ -1,0 +1,83 @@
+﻿@model RoleModel
+@{
+    ViewData["Title"] = "NewRole";
+    Layout = "~/Views/Shared/Menu.cshtml";
+}
+
+<!-- Page Wrapper -->
+<div class="main-wrapper">
+	<div class="page-wrapper">
+		<div class="content container-fluid">
+
+			<!-- Page Header -->
+			<div class="page-header">
+				<div class="row align-items-center">
+					<div class="col">
+						<h3 class="page-title">Add Role</h3>
+						<div class=" text-end float-end ms-auto ">
+							@if ((bool)ViewData["InAdded"] == true)
+							{
+								<div class="alert alert-success a-dismissible fade show" role="alert">
+									<strong>Saved successfully</strong>
+									<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+								</div>
+							}
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Page Header -->
+
+			<div class="row">
+				<div class="col-sm-12">
+
+					<div class="card">
+						<div class="card-body">
+							<form method="post">
+								<div class="row">
+									<div class="page-header">
+										<div class="row align-items-center">
+											<div class="col">
+												<h3 class="page-title">Role</h3>
+											</div>
+
+										</div>
+									</div>
+									<div>
+											<input type="hidden" class="form-control" asp-for="Id" />
+									</div>
+									<div class="col-12 col-sm-4">
+										<div class="form-group local-forms">
+											<label>Role Name <span class="login-danger" >*</span></label>
+											<input type="text" class="form-control" asp-for="Name" />
+											<span asp-validation-for="Name"></span>
+										</div>
+									</div>
+
+									<div class="col-12">
+										<div class="student-submit">
+
+											@if ((bool)ViewData["IsEditRole"] == true)
+											{
+												<button type="submit" class="btn btn-primary" asp-action="Update">Update</button>
+
+											}
+											else
+											{
+												<button type="submit" class="btn btn-primary" asp-action="SaveRole">Save</button>
+											}
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- /Page Wrapper -->
+</div>
+<!-- /Main Wrapper -->

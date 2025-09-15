@@ -1,0 +1,104 @@
+﻿@model List<SignUpDTO>
+@{
+    ViewData["Title"] = "UsersList";
+    Layout = "~/Views/Shared/Menu.cshtml";
+}
+
+<form method="post">
+	<div class="page-wrapper" style="min-height: 376px;">
+		<div class="content container-fluid">
+
+			<!-- Page Header -->
+			<div class="page-header">
+				<div class="row align-items-center">
+					<div class="col">
+						<h3 class="page-title">List of Users</h3>
+
+					</div>
+				</div>
+			</div>
+			<!-- /Page Header -->
+
+
+
+			<div class="row">
+				<div class="col-sm-12">
+
+					<div class="card card-table">
+						<div class="card-body">
+
+							<!-- Page Header -->
+							<div class="page-header">
+								<div class="row align-items-center">
+									<div class="col">
+										<h3 class="page-title">Users</h3>
+									</div>
+									
+								</div>
+							</div>
+							<!-- /Page Header -->
+
+							<div class="table-responsive">
+								<div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+										<div class="col-sm-12">
+											<table class="table border-0 star-student table-hover table-center mb-0 datatable table-striped dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+												<thead class="student-thread">
+													<tr role="row">
+														<th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
+
+
+
+													: activate to sort column descending" style="width: 135.975px;">
+															<div class="form-check check-tables">
+																<input class="form-check-input" type="checkbox" value="something">
+															</div>
+														</th>
+														<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="User Name : activate to sort column ascending" style="width: 228.788px;">User Name</th>
+														<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending" style="width: 228.788px;">Email</th>
+														<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Data of Birth: activate to sort column ascending" style="width: 228.788px;">DOB</th>
+														<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Role: activate to sort column ascending" style="width: 228.788px;">Role</th>
+														<th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Action: activate to sort column descending" style="width: 232.25px;" aria-sort="ascending">Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													@foreach (SignUpDTO item in Model)
+													{
+														<tr role="row" class="even">
+															<td class="sorting_1">
+																<div class="form-check check-tables">
+																	<input class="form-check-input" type="checkbox" value="something">
+																</div>
+															</td>
+
+															<td>@item.Name</td>
+															<td>@item.Email</td>
+															<td>@item.DOB</td>
+															<td>@item.RoleName</td>
+															<td class="sorting">
+																<div class="sorting">
+																	<a class="btn btn-sm bg-success-light " asp-action="DeleteUser" asp-route-id="@item.Id">
+																		<i class="fa-solid fa-trash"></i>
+																	</a>
+																	
+																</div>
+															</td>
+														</tr>
+
+													}
+												</tbody>
+											</table>
+										</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer>
+		<p>Copyright © 2022 Dreamguys.</p>
+	</footer>
+	<!-- /Footer -->
+</form>

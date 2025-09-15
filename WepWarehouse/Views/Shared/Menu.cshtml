@@ -1,0 +1,207 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@using WepWarehouse.Data;
+@inject SignInManager<ApplicationUser> signInManager;
+@inject WepWarehouse.Services.IAccountServices accountServices
+@inject WepWarehouse.Services.IAccountServices accountServices
+
+@{
+	SignUpDTO? currentUser = null;
+	string roleName = "";
+
+	if (User.Identity.IsAuthenticated)
+	{
+		currentUser = accountServices.GetCurrentUserInfo(User).Result;
+		roleName = User.IsInRole("Manager") ? "Operations Manager" : "Operations Employee";
+	}
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<title>WareHouse - Profile</title>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+	<script src="https://kit.fontawesome.com/7c5883744a.js" crossorigin="anonymous"></script>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="~/assets/img/favicon1.png">
+
+	<!-- Fontfamily -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="~/assets/plugins/bootstrap/css/bootstrap.min.css">
+
+	<!-- Feathericon CSS -->
+	<link rel="stylesheet" href="~/assets/plugins/feather/feather.css">
+
+	<!-- Pe7 CSS -->
+	<link rel="stylesheet" href="~/assets/plugins/icons/flags/flags.css">
+
+	<!-- Select CSS  -->
+	<link rel="stylesheet" href="~/assets/plugins/select2/css/select2.min.css">
+	<link rel="stylesheet" href="~/assets/plugins/select2/js/select2.min.js">
+
+	<!-- Feathericon CSS -->
+	<link rel="stylesheet" href="~/assets/css/feather.css">
+
+	<!-- Ckeditor CSS-->
+	<link rel="stylesheet" href="~/assets/css/ckeditor.css">
+
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="~/assets/plugins/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="~/assets/plugins/fontawesome/css/all.min.css">
+
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="~/assets/css/style.css">
+</head>
+<body>
+
+	<!-- Main Wrapper -->
+	<div class="main-wrapper">
+
+		<!-- Header -->
+		<div class="header">
+
+			<!-- Logo -->
+			<div class="header-left">
+				<a asp-controller="Dashboard" asp-action="Index" class="logo">
+					<img src="~/assets/img/logo2.png" alt="Logo">
+				</a>
+				<a href="index.html" class="logo logo-small">
+					<img src="~/assets/img/logonew-small.png" alt="Logo" width="30" height="30">
+				</a>
+			</div>
+			<!-- /Logo -->
+
+			<div class="menu-toggle">
+				<a href="javascript:void(0);" id="toggle_btn">
+					<i class="fas fa-bars"></i>
+				</a>
+			</div>
+			<!-- Mobile Menu Toggle -->
+			<a class="mobile_btn" id="mobile_btn">
+				<i class="fas fa-bars"></i>
+			</a>
+			<!-- /Mobile Menu Toggle -->
+			<!-- Header Right Menu -->
+			<ul class="nav user-menu">
+				
+				
+				<li class="nav-item zoom-screen me-2">
+					<a href="#" class="nav-link header-nav-list">
+						<img src="~/assets/img/icons/header-icon-04.svg" alt="">
+					</a>
+				</li>
+
+				<!-- User Menu -->
+				<li class="nav-item dropdown has-arrow new-user-menus">
+					<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+						<div class="user-img">
+							<img class="rounded-circle" src="~/assets/img/profiles/avatar-01.jpg" width="31" alt="@currentUser?.Name">
+							<div class="user-text">
+								<h6>@currentUser?.Name</h6>
+								<p class="text-muted mb-0">@roleName</p>
+							</div>
+						</div>
+
+					</a>
+					<div class="dropdown-menu">
+						
+						<a class="dropdown-item" asp-controller="Account" asp-action="Profile">My Profile</a>
+						<a class="dropdown-item" asp-controller="Account" asp-action="Logout">Logout</a>
+					</div>
+				</li>
+				<!-- /User Menu -->
+
+			</ul>
+			<!-- /Header Right Menu -->
+
+		</div>
+		<!-- /Header -->
+		<!-- Sidebar -->
+		<div class="sidebar" id="sidebar">
+			<div class="sidebar-inner slimscroll">
+				<div id="sidebar-menu" class="sidebar-menu">
+					<ul>
+						<li class="menu-title">
+							<span>Main Menu</span>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="feather-grid"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
+							<ul>
+								
+									<li><a asp-controller="Dashboard" asp-action="Index">Dashboard</a></li>
+
+
+							</ul>
+						</li>
+						
+						@if (User.IsInRole("Manager"))
+								{
+							<li class="submenu">
+
+								<a href="#"><i class="fa-solid fa-sliders"></i> <span>Settings</span> <span class="menu-arrow"></span></a>
+								<ul>
+								
+									<li><a asp-controller="Country" asp-action="CountryList">Country List</a></li>
+									<li><a asp-controller="Account" asp-action="Rolelist">Role list</a></li>
+									<li><a asp-controller="Account" asp-action="UsersList">Users List </a></li>
+
+								
+								</ul>
+							</li>
+							}
+						
+						
+							<li class="submenu">
+								<a href="#"><i class="fas fa-chalkboard-teacher"></i> <span>WepWarehouse</span> <span class="menu-arrow"></span></a>
+								<ul>
+								@if (User.IsInRole("Manager"))
+								{
+									<li><a asp-controller="WareHouse" asp-action="WarehouseList">Warehouse List</a></li>
+								}
+								
+								@if (User.IsInRole("Employee"))
+								{
+									<li><a asp-controller="WareHouseItem" asp-action="ItemList">Item List</a></li>
+								}
+
+								</ul>
+							</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /Sidebar -->
+		<!-- Page Wrapper -->
+		<div class="page-header">
+			<div class="row">
+				<div class="col-sm-12">
+					@RenderBody()
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery -->
+	<script src="~/assets/js/jquery-3.6.0.min.js"></script>
+
+	<!-- Bootstrap Core JS -->
+	<script src="~/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Feather Icon JS -->
+	<script src="~/assets/js/feather.min.js"></script>
+
+	<!-- Slimscroll JS -->
+	<script src="~/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+	<!-- Select2 JS -->
+	<script src="~/assets/plugins/select2/js/select2.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="~/assets/js/script.js"></script>
+</body>
+</html>
