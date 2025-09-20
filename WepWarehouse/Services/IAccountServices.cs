@@ -27,8 +27,6 @@ namespace WepWarehouse.Services
 
         Task<List<RoleModel>> GetAllRolesAsync();
 
-        Task<RoleModel?> GetRoleByIdAsync(string id);
-
-        Task<bool> UpdateRoleAsync(RoleModel model);
+        
     }
 }

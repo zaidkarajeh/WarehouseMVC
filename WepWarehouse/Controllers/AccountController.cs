@@ -65,7 +65,6 @@ namespace WepWarehouse.Controllers
         {
             ViewData["InAdded"] = false;
             ViewData["IsEdit"] = false;
-            ViewData["IsEditRole"] = false;
 
             return View("NewRole");
         }
@@ -73,7 +72,6 @@ namespace WepWarehouse.Controllers
         public async Task<IActionResult> SaveRole(RoleModel role)
         {
             ViewData["IsEdit"] = false;
-            ViewData["IsEditRole"] = false;
             ViewData["InAdded"] = true;
 
             var result = await accountServices.AddRole(role);
@@ -111,49 +109,6 @@ namespace WepWarehouse.Controllers
             List<RoleModel> roleModels = await accountServices.GetRoles();
 
             return View("Rolelist", roleModels);
-        }
-
-        public async Task<IActionResult> Edit(string id)
-        {
-            ViewData["InAdded"] = false;
-
-            ViewData["IsEdit"] = true;
-            ViewData["InValid"] = false;
-            ViewData["IsEditRole"] = true;
-
-            if (string.IsNullOrEmpty(id))
-                return BadRequest();
-
-            var role = await roleManager.FindByIdAsync(id);
-            if (role == null)
-                return NotFound();
-
-            var model = new RoleModel
-            {
-                Id = role.Id,
-                Name = role.Name
-            };
-
-            return View("NewRole", model);
-        }
-
-        public async Task<IActionResult> Update(RoleModel model)
-        {
-            ViewData["InAdded"] = false;
-            ViewData["IsEdit"] = true;
-            ViewData["InValid"] = false;
-            ViewData["IsEditRole"] = true;
-
-            if (!ModelState.IsValid)
-
-                return View("NewRole", model);
-
-            bool updated = await accountServices.UpdateRoleAsync(model);
-            if (updated)
-                return RedirectToAction(nameof(Rolelist));
-
-            ModelState.AddModelError("", "Failed to update role");
-            return View("NewRole", model);
         }
 
         public async Task<IActionResult> DeleteUser(string id)

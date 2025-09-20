@@ -164,20 +164,6 @@ namespace WepWarehouse.Services
             };
         }
 
-        public async Task<RoleModel?> GetRoleByIdAsync(string id)
-        {
-            var role = await roleManager.FindByIdAsync(id);
-            if (role == null) return null;
-
-            return new RoleModel
-            {
-                Id = role.Id,
-                Name = role.Name
-            };
-        }
-
-
-
         public async Task<List<RoleModel>> GetAllRolesAsync()
         {
             return await roleManager.Roles
@@ -191,39 +177,6 @@ namespace WepWarehouse.Services
         }
 
 
-        public async Task<bool> UpdateRoleAsync(RoleModel model)
-        {
-            Console.WriteLine($"Incoming model: Id={model.Id}, Name={model.Name}");
-
-            var role = await roleManager.FindByIdAsync(model.Id);
-            if (role == null)
-            {
-                Console.WriteLine($"Role with ID {model.Id} not found.");
-                return false;
-            }
-
-            Console.WriteLine($"Current DB Role: Id={role.Id}, Name={role.Name}");
-
-            role.Name = model.Name;
-            role.NormalizedName = model.Name.ToUpperInvariant();
-
-            var result = await roleManager.UpdateAsync(role);
-
-            if (!result.Succeeded)
-            {
-                foreach (var err in result.Errors)
-                {
-                    Console.WriteLine($"Update failed: {err.Description}");
-                }
-            }
-            else
-            {
-                Console.WriteLine($"Role updated successfully. New Name = {role.Name}");
-            }
-
-            return result.Succeeded;
-
-
-        }
+       
     }
     }

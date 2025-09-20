@@ -259,3 +259,4 @@ C:\inetpub\wwwroot\WepWarehouse\WepWarehouse\obj\Debug\net8.0\refint\WepWarehous
 C:\inetpub\wwwroot\WepWarehouse\WepWarehouse\obj\Debug\net8.0\WepWarehouse.pdb
 C:\inetpub\wwwroot\WepWarehouse\WepWarehouse\obj\Debug\net8.0\WepWarehouse.genruntimeconfig.cache
 C:\inetpub\wwwroot\WepWarehouse\WepWarehouse\obj\Debug\net8.0\ref\WepWarehouse.dll
+C:\inetpub\wwwroot\WepWarehouse\WepWarehouse\obj\Debug\net8.0\WepWarehouse.sourcelink.json

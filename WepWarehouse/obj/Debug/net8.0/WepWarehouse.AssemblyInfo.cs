@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WepWarehouse")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b99522dc6c61abfe0c1b7cb299ee80ce00b7718")]
 [assembly: System.Reflection.AssemblyProductAttribute("WepWarehouse")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WepWarehouse")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
